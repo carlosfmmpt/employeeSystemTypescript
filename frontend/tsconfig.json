@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["dom", "esnext"],
+      "jsx": "react-jsx", 
+      "moduleResolution": "node",
+      "baseUrl": "./",    // Asegura que las importaciones relativas se resuelvan desde la raíz
+      "paths": {
+        "@features/*": ["src/features/*"],  // Si deseas usar alias como "@features"
+        "@store/*": ["src/store/*"]
+      }
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
